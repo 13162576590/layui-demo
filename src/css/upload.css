@@ -1,0 +1,190 @@
+.file-upload {
+  width:110px;
+  height:110px;
+  display: inline-block;
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+  color: #999;
+  margin: 0 10px 10px 0;
+}
+
+.file-upload-img {
+  padding: 0;
+  margin: 0 10px 10px 0;
+  vertical-align: middle;
+}
+
+.file-upload-drag {
+  position: absolute;
+}
+
+.file-upload-icon {
+  line-height: 92px;
+}
+
+.file-name {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  word-break: break-all;
+  line-height: 16px;
+  font-size: 10px;
+}
+
+/*文件删除*/
+.file-div{
+  width:110px;
+  height:110px;
+  position: relative;
+  margin: auto;
+}
+
+blockquote .file-div{
+  display: inline-block;
+  margin: 5px;
+}
+
+.file-delete{
+  position: absolute;
+  height: 0;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#80000000', endColorstr='#80000000')\0;
+  background: rgba( 0, 0, 0, 0.5 );
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 300;
+}
+.file-delete span{
+  position: absolute;
+  right:0px;
+  top: 5px;
+  cursor: pointer;
+  color: white!important;
+  font-size: 16px!important;
+}
+.file-delete i{
+  margin-right: 8px;
+}
+.file-delete .fa-undo:hover{
+
+  color: #59acff !important;
+
+}
+.file-delete .fa-repeat:hover{
+
+  color: #59acff !important;
+
+}
+.file-delete .fa-trash-o:hover{
+
+  color: #59acff !important;
+
+}
+
+.layui-upload-list {
+  position: relative;
+}
+
+.layui-upload-background {
+  position: absolute;
+}
+
+.layui-upload-icon {
+  text-align: center;
+  line-height: 92px
+}
+
+.upload-file-outer {
+  /*position:relative;*/
+  position: absolute;
+  /*background-image: url('../../../start/icon/upload-file-background.png');*/
+  /*background-size: contain;*/
+}
+
+.upload-img-display {
+  position: absolute;
+  z-index: 9;
+}
+
+.layui-upload-file-btn {
+  position: absolute;
+  z-index: 99;
+  opacity: 0;
+}
+
+.upload-img-delete-btn {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background: #00F7DE;
+  z-index: 3;
+  right: 5px;
+  top: 5px;
+  opacity: 0;
+  z-index: 9999;
+  transition: 0.3s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+}
+
+.upload-file-outer:hover .upload-img-delete-btn {
+  opacity: 1;
+}
+
+.layui-upload-img {
+  width: 110px;
+  height: 110px;
+  margin: 0 10px 10px 0;
+  border:1px solid #ccc;
+}
+
+.file-panel{
+  width:110px;
+  display: inline;
+  position:absolute;
+  right:8px;
+  top:3px;
+}
+
+.file-panel i{
+  /*position:absolute;*/
+  /*right:8px;*/
+  /*top:3px;*/
+  font-size: 20px;
+  color: #39c3ff;
+  /*margin-right: 3px;*/
+  /*margin-top: 2px;*/
+  cursor:pointer;
+
+}
+
+.file-panel i:hover{
+  color: rgb(48, 174, 217);
+}
+.img-div{
+  position:relative;
+  width:100%;
+  height:100%;
+  display: inline;
+}
+
+.img-div .file-panel{
+  width: 25px;
+  display: inline;
+  position: absolute;
+  left:45px;
+  top: 60px;
+}
+
+.xingxing {
+  position: relative;
+  top: 3px;
+  color: #ff0033;
+  font-size: medium;
+}
+
+

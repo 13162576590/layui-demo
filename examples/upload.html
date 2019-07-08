@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>文件上传 - layui</title>
+
+<link rel="stylesheet" href="../src/css/layui.css">
+<link rel="stylesheet" href="../src/css/upload.css">
+<link rel="stylesheet" href="../src/css/font-awesome.min.css">
+
+
+
+<style>
+body{padding: 50px 100px;}
+pre{margin-bottom: 20px;}
+</style>
+</head>
+<body>
+
+  <div class="layui-col-md12" id="file-view">
+  </div>
+
+
+<script src="../src/layui.js"></script>
+<!-- <script src="../src/layui.js"></script>
+ -->
+<script>
+
+layui.config({
+    base: './extends/'
+  }).extend({fileUpload: 'fileUpload'}).use(['fileUpload'], function(){
+  let fileUpload = layui.fileUpload;
+
+  let api = 'http://localhost:8080';
+  var items = [];
+  var item1 = {};
+  item1.code='Business_license';
+  item1.key='b4141e9e-f8a4-482c-92ea-3b4b063e4c56';
+  item1.type='image';
+  item1.fileName='Ci5Kg1o8q6eATvmPAAB4Gu0YeL4846.jpg';
+
+  var item2 = {};
+
+  item2.code='Business_license';
+  item2.key='9c327e7d-0c6b-4367-bbdb-0785cf046c4f';
+  item2.type='word';
+  item2.fileName='Ci5Kg1o8q6eATvmPAAB4Gu0YeL4846.jpg';
+
+  var item3 = {};
+
+  item3.code='sf_agreement';
+  item3.key='82de629a-0d58-4bd2-996c-e56f1d2b9104';
+  item3.type='html';
+  item3.fileName='Ci5Kg1o8q6eATvmPAAB4Gu0YeL4846.jpg';
+
+  items.push(item1);
+  items.push(item2);
+  items.push(item3);
+
+  var imgConfigs=[];
+  var imgConfig={};
+  imgConfig.code='demo';
+  imgConfig.name='测试demo';
+  imgConfig.format='jpg,png,jpeg';
+  imgConfig.isNeed='1';
+  imgConfigs.push(imgConfig);
+
+  fileUpload.init({
+    view: '#file-view',
+    items: imgConfigs,
+    url: api + '/upload/**',
+    imgUrl: api + '/upload/image/100/200/',
+    originalUrl: api + '/upload/image/',
+    value: items
+  });
+
+
+
+});
+
+</script>
+</body>
+</html>
