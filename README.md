@@ -3,6 +3,8 @@ layui demo
 
 基于layui上传二次封装,修改layui源码实现放弃上传
 
+layui_demo文件上传/layui-demo/examples/upload.html
+
 demo效果图
 
 ![image](https://github.com/13162576590/layui-demo/blob/master/demo.png?raw=true)
