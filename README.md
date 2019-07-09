@@ -1,7 +1,9 @@
 # layui-demo
 layui demo
 
-基于layui上传二次封装,修改layui源码实现放弃上传,确保上传接口能通，否则图片不会反显
+基于layui文件上传二次封装,修改layui源码实现放弃上传,确保上传接口能通，否则图片不会反显
+
+该组件支持图片、文件上传，具体使用见文档。
 
 layui_demo文件上传/layui-demo/examples/upload.html
 
