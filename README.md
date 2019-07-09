@@ -10,3 +10,8 @@ demo效果图
 ![image](https://github.com/13162576590/layui-demo/blob/master/demo.png?raw=true)
 
 详细使用文档见  文件上传文档
+
+表头  | 表头  | 表头
+ ---- | ----- | ------  
+ 单元格内容  | 单元格内容 | 单元格内容 
+ 单元格内容  | 单元格内容 | 单元格内容  

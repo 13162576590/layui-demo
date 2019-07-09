@@ -137,7 +137,7 @@ layui.define(
                 }
                 upload.render({
                   elem: '#file-upload-' + item.code,
-                  url: 'http://localhost:8080' + '/upload/**',
+                  url: 'http://localhost:8080' + '/upload',
                   accept: 'file',
                   acceptMime: acceptMime,
                   multiple: item.multiple ? item.multiple : false,
