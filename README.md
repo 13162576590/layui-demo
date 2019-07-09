@@ -10,17 +10,30 @@ demo效果图
 ![image](https://github.com/13162576590/layui-demo/blob/master/demo.png?raw=true)
 
 一、	文件上传组件
+
 setter.testApi = “http://localhost:8080”
+
 1.引入css文件
+
+、、、
+
 <link rel="stylesheet" href="../src/css/layui.css">
+
 <link rel="stylesheet" href="../src/css/upload.css">
+
 <link rel="stylesheet" href="../src/css/font-awesome.min.css">
+、、、
+
 2.引入js
+
   layui.extend({fileUpload: '../lib/extend/fileUpload'})
 3.定义组件容器
+
   <div class="layui-col-md12" id="file-view">
   </div>
+
 4.初始化组件
+
   fileUpload.init({
     view: '#file-view', //容器id
     items: imgConfig, //配置json
@@ -29,6 +42,7 @@ setter.testApi = “http://localhost:8080”
     originalUrl: setter.testApi + '/image/0/0/', //原图
     value: items //返显初始参数
   });
+
 (1)配置信息imgConfig格式
     //json格式
     [
@@ -41,18 +55,7 @@ setter.testApi = “http://localhost:8080”
         "disabled": false
       }
    ]
-   
-序号	类别名称	英文代码	是否必填	备注
-1	业务类别	code	是	
-2	文件大小限制	size	否	暂时未使用
-3	是否必传	isNeed	否	1:必传 0:非必传 默认非必传
-4	业务类别名称	name	是	
-5	文件格式	format	否	默认文件类型
-6	可否上传	disabled	否	true: 不可上传 false:可上传
-7	最大上传张数	max	否	默认最多上传5张
-8	单/多选	multiple	否	true: 可选择多张 false:单选 默认只能选择一张
-9	宽	width	否	默认110px, 入参时只有宽高一起入参生效
-10	高	height	否	默认110px, 入参时只有宽高一起入参生效
+
 
 (2)返显初始参数items格式
     //json格式 
