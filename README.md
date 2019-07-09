@@ -47,7 +47,7 @@ setter.testApi = “http://localhost:8080”
 
 (1)配置信息imgConfig格式
 
-	```
+```
     //json格式
     [
       {
@@ -59,11 +59,11 @@ setter.testApi = “http://localhost:8080”
         "disabled": false
       }
    ]
-   ```
+```
 
 
 (2)返显初始参数items格式
-	```
+```
 	//json格式 
 	[
 		{
@@ -73,13 +73,13 @@ setter.testApi = “http://localhost:8080”
 			"fileName": "营业执照"
 		}
 	] 
-	```
+```
 
 5.API方法
 
 (1) getKeys
     获取上传文件提交参数，得到一个List,返回格式如下:
-	```
+```
 	[{
 		"imgCode": "Business_license",
 		"imgKey": "b4141e9e-f8a4-482c-92ea-3b4b063e4c56"
@@ -90,11 +90,11 @@ setter.testApi = “http://localhost:8080”
 		"imgCode": "sf_agreement",
 		"imgKey": "82de629a-0d58-4bd2-996c-e56f1d2b9104"
 	}]
-	```
+```
 
 (2) getMapKeys
     获取上传文件提交参数，得到一个Map,返回格式如下:
-    ```
+```
 	{
 	  "Business_license": [
 	         "b4141e9e-f8a4-482c-92ea-3b4b063e4c56",
@@ -104,12 +104,12 @@ setter.testApi = “http://localhost:8080”
 	         "82de629a-0d58-4bd2-996c-e56f1d2b9104"
 	  ]
 	}
-	```
+```
 
 (3) getFiles
     获取上传文件提交参数，得到一个List,返回格式如下:
 
-	```
+```
 	[
 	  {
 	         "type": "image",
@@ -128,11 +128,11 @@ setter.testApi = “http://localhost:8080”
 	         "imgCode": "sf_agreement"
 	  }
 	]
-	```
+```
 
 (4) getMapFiles
     获取上传文件提交参数，得到一个Map,返回格式如下:
-	```
+```
 	{
 		"Business_license": [{
 			"type": "image",
@@ -152,7 +152,7 @@ setter.testApi = “http://localhost:8080”
 			"imgCode": "sf_agreement"
 		}]
 	}
-	```
+```
 
 详细API接口使用,见"文件上传文档"
 
