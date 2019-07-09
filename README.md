@@ -34,7 +34,7 @@ setter.testApi = “http://localhost:8080”
 
 4.初始化组件
 
-	```
+```
 	fileUpload.init({
 		view: '#file-view', //容器id
 		items: imgConfig, //配置json
@@ -43,7 +43,7 @@ setter.testApi = “http://localhost:8080”
 		originalUrl: setter.testApi + '/image/0/0/', //原图
 		value: items //返显初始参数
 	});
-	```
+```
 
 (1)配置信息imgConfig格式
 
