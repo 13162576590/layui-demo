@@ -15,14 +15,13 @@ setter.testApi = “http://localhost:8080”
 
 1.引入css文件
 
-、、、
-
+```
 <link rel="stylesheet" href="../src/css/layui.css">
 
 <link rel="stylesheet" href="../src/css/upload.css">
 
 <link rel="stylesheet" href="../src/css/font-awesome.min.css">
-、、、
+```
 
 2.引入js
 
